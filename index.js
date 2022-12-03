@@ -15,7 +15,8 @@ const productsList = document.querySelector('container-items')
 //Arreglo de pruductos agregados
 
 let allProducts = []
-
+const valorTotal = document.querySelector('.total-pagar')
+const countProducts = document.querySelector('#contador-productos')
 
 
 productsList.addEventListener ('click', e => {
@@ -59,6 +60,9 @@ const showHTML = () =>{
 
 rowProduct.innerHTML = '';
 
+let total = 0;
+let totalofProducts = 0;
+
     allProducts.forEach(product => {
         const containerProduct = document.createElement('div')
         containerProduct.classList.add('cart-product')
@@ -83,7 +87,13 @@ rowProduct.innerHTML = '';
 							/>
 						</svg>`
 
-                        rowProduct.append(containerProduct)
-    })
-}
+                        rowProduct.append(containerProduct);
+
+                        total = total + parseInt(product.quantity * product.price.sluice(1));
+                        totalofProducts = totalofProducts + product.quantity;
+
+    });
+    valorTotal.innerText = `$${total}`;
+    countProducts.innerText = totalofProducts;
+};
 
