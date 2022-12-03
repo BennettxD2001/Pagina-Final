@@ -1,54 +1,135 @@
 <html>
+
 <head>
-<meta name="description" content="Web App de venta de 
-Autos en HTML">
-<meta name="keyword" content="Web App de venta de 
-Autos en HTML">
-<title>Orden de pedido</title>
+    <meta name="description" content="Web App de venta de
+            Autos en HTML">
+    <meta name="keyword" content="Web App de venta de
+            Autos en HTML">
+    <title>Orden de pedido</title>
 </head>
+
 <body bgcolor="white" text="black">
-<center><table width="950"><tr><td>
-<a href="registrarme.html"><img src="imag/registro.png"></a><a href="comprar.html"><img src="imag/comprar.png"></a><a href="contacto.html"><img src="imag/contacto.png"></a>
+    <center>
+        <table width="950">
+            <tr>
+                <td>
+                    <a href="registrarme.html"><img src="imag/registro.png"></a><a href="comprar.html"><img
+                            src="imag/comprar.png"></a><a href="contacto.html"><img src="imag/contacto.png"></a>
+                    <img align="right" src="imag/Captura4.png">
+                    <h1>
+                        <center>
+                            <font color="#515148" face="Corbel">AUTOS
+                                BENNETT
+                    </h1>
+    </center>
+    </font>
 
-<img align="right" src="imag/Captura4.png">
-<h1><center><font color="#515148" face="Corbel">AUTOS BENNETT</h1></center></font>
+    <table>
+        <tr bgcolor="#f0bdff">
+            <td WIDTH="600" HEIGHT="50">
+                <p>
+                    <font color="black" face="Corbel">
+                        <h2>&nbsp;Datos
+                            Personales</h2>
+                </p>
+                <p>&nbsp;Nombre</p>
+                <form>&nbsp;<input type="text" size="48" maxlength="50"></form>
+                <p>&nbsp;_______________________________________________</p>
+                <p>&nbsp;Apellido</p>
+                <form>&nbsp;<input type="text" size="48" maxlength="50"></form>
+                <p>&nbsp;_______________________________________________</p>
+                <p>&nbsp;Email *</p>
+                <form>&nbsp;<input type="email" name="" id="" size="48"></form>
+                <p>&nbsp;_______________________________________________</p>
+                <p>&nbsp;Dirección</p>
+                <form>&nbsp;<input type="text" size="48" maxlength="100"></form>
+                <p>&nbsp;_______________________________________________</p>
+                <p>&nbsp;Número Telefónico</p>
+                <form>&nbsp;<input type="text" size="48" maxlength="10"></form>
+                <p>&nbsp;_______________________________________________</p>
+                <p>&nbsp;Número de Tarjeta</p>
+                <form>&nbsp;<input type="text" size="48" maxlength="19"></form>
+                <p>&nbsp;_______________________________________________</p>
+                <p>&nbsp;<a href="continuar.html"><img src="imag/continuar.png"></a></p>
+                </font><br>
+                <h1>
+                    <center>
+                        </font>
+            </td>
+            <td WIDTH="600" HEIGHT="50" bgcolor="white">
+                <font color="black" face="Corbel">
+                    <h3>
+                        <center>Método
+                            de pago<center><br>
 
-<table>
-<tr bgcolor= "#f0bdff">
-<td WIDTH="600" HEIGHT="50"><p><font color="black" face="Corbel"><h2>&nbsp;Datos Personales</h2></p><p>&nbsp;Nombre</p>
-    <form>&nbsp;<input type="text" size="48" maxlength="50"></form><p>&nbsp;_______________________________________________</p>
-<p>&nbsp;Apellido</p><form>&nbsp;<input type="text"size="48" maxlength="50"></form><p>&nbsp;_______________________________________________</p>
-<p>&nbsp;Email *</p><form>&nbsp;<input type="email" name="" id="" size="48"></form><p>&nbsp;_______________________________________________</p>
-<p>&nbsp;Dirección</p><form>&nbsp;<input type="text" size="48" maxlength="100"></form><p>&nbsp;_______________________________________________</p>
-<p>&nbsp;Número Telefónico</p><form>&nbsp;<input type="text" size="48" maxlength="10"></form><p>&nbsp;_______________________________________________</p>
-<p>&nbsp;Número de Tarjeta</p><form>&nbsp;<input type="text" size="48" maxlength="19"></form><p>&nbsp;_______________________________________________</p>
-<p>&nbsp;<a href="continuar.html"><img src="imag/continuar.png"></a></p></font><br><h1><center></font>
-</td>
-<td WIDTH="600" HEIGHT="50" bgcolor= "white"><font color="black" face="Corbel"><h3><center>Método de pago<center><br>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="C795ZZ8SPZTKW">
+                                    <input type="image"
+                                        src="https://www.paypalobjects.com/es_XC/i/btn/btn_paynow_LG.gif" border="0"
+                                        name="submit" alt="PayPal, la
+                                                                forma más segura
+                                                                y rápida de
+                                                                pagar en
+                                                                línea.">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif"
+                                        width="1" height="1">
+                                </form>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="C795ZZ8SPZTKW">
-<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-</form>
+                                <img src="imag/tarjeta.jpg"><input type="checkbox" name="" id="">
+                                <font color="#515148" face="Corbel">Tarjeta<br><img src="imag/efectivo.jpg">
+                                    <input type="checkbox" name="" id="">
+                                    <font color="#515148" face="Corbel">Efectivo</font>
+                    </h3>
+            </td>
+            </font>
+        <tr>
+    </table>
 
-<img src="imag/tarjeta.jpg"><input type="checkbox" name="" id=""><font color="#515148" face="Corbel">Tarjeta<br><img src="imag/efectivo.jpg">
-<input type="checkbox" name="" id=""><font color="#515148" face="Corbel">Efectivo</font></h3></td></font>
+    <br>
+    <table WIDTH="950" style="background-color:#087e6a">
+        <td></td>
+    </table>
+    <br>
+    <center>
+        <a href="index.html">
+            <font color="#515148" face="Corbel">Inicio
+        </a></font>
+        -
+        <a href="registrarme.html">
+            <font color="#515148" face="Corbel">Registrarme
+        </a></font>
+        -
+        <a href="comprar.html">
+            <font color="#515148" face="Corbel">Comprar
+        </a></font>
+        -
+        <a href="contacto.html">
+            <font color="#515148" face="Corbel">Contacto
+        </a></font>
+        <br>
+        <font color="#515148" face="Corbel">Mandanos
+            un mensaje via email a<a href="http://www.gmail.com">
+                AutosBennett@gmail.com</a></font>
+    </center>
+    <br>
+    </br>
+    <center>
+        <a href="http://www.facebook.com"><img src="imag/Facebook.png" href="http://www.facebook.com" WIDTH="50"
+                HEIGHT="50"></a>
+        <a href="http://www.instagram.com"><img src="imag/instagram.png" WIDTH="50" HEIGHT="50"></a>
+        <a href="http://www.whatsapp.com"><img src="imag/whats.png" WIDTH="50" HEIGHT="50"></a>
+        <br></br>
+        <a>
+            <font color="#515148" face="Corbel">© Copyright
+                2022 | AutosBennett</font>
+        </a>
+    </center>
+    </table>
+    </td>
+    </tr>
+    </table>
+    </center>
+</body>
 
-<tr>
-</table>
-
-
-<br><center>
-<a href="index.html"><font color="#515148" face="Corbel">Inicio</a></font> -
-<a href="registrarme.html"><font color="#515148" face="Corbel">Registrarme</a></font> -
-<a href="comprar.html"><font color="#515148" face="Corbel">Comprar</a></font> -
-<a href="contacto.html"><font color="#515148" face="Corbel">Contacto</a></font> <br><font color="#515148" face="Corbel">Copyright 
-2022 Mandanos un mensaje via email a 
-<a href="http://www.gmail.com">AutosBennett@gmail.com</a></font>
-
-</center>
-</td></tr></table></center>
-</body> 
 </html>
