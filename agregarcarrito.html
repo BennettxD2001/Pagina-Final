@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Catálogo</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>AUTOS DISPONIBLES</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos"></span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito"></span>
+								<p class="titulo-producto-carrito"></p>
+								<span class="precio-producto-carrito"></span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="C795ZZ8SPZTKW">
+							<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+							<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+							</form>
+					</div>
+					<p class="cart-empty"> </p>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="imag/ibiza.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IBIZA COUPLE 2012</h2>
+					<p class="price">$135,000.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/mazdaplata.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>MAZDA HATCHBACK 2015</h2>
+					<p class="price">$204,000.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/blanca3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HONDA ACCORD 2013</h2>
+					<p class="price">$210,000.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/mazdaazul.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>MAZDA MX5 2008</h2>
+					<p class="price">$150,000.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/nissanroja.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>NISSAN SENTRA 2011</h2>
+					<p class="price">$109,500.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/blanco2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>SAAB 9-3 2005</h2>
+					<p class="price">$51,500.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/plata.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>TOYOTA YARIS 2011</h2>
+					<p class="price">$108,500.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/sub.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>CHEVR SUBURBAN 2011</h2>
+					<p class="price">$238,500.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/blanco1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>VOLKSWAGEN GOL 2012</h2>
+					<p class="price">$98,500.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/susuki.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>SUZUKI SWIFT 2012</h2>
+					<p class="price">$128,500.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/raptor.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>FORD RAPTOR 2019</h2>
+					<p class="price">$1,178,500.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imag/honda.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HONDA CR-V 2016</h2>
+					<p class="price">$379,000.00</p>
+					<button class="btn-add-cart">❤</button>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
