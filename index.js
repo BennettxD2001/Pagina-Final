@@ -21,7 +21,7 @@ const countProducts = document.querySelector('#contador-productos')
 
 productsList.addEventListener ('click', e => {
     if (e.target.classList.contains('btn-add-cart')){
-        const product = e.target.parentElement
+        const product = e.target.parentElement;
 
         const infoProduct = {
             quantity: 1,
@@ -50,12 +50,28 @@ productsList.addEventListener ('click', e => {
 
         showHTML();
     }
-    console.log(allProducts)
+});
+
+rowProduct.addEventListener('click', e =>{
+    if(e.targetclassList.container('icon-close')){
+        const product = e.target.parameterElement;
+        const title = product.querySelector('p').textContent;
+        allProducts = allProducts.filter(
+            product => product.title !== title
+        );
+        console.log(allProducts)
+        showHTML();
+    }
 });
 
 // mostrar HTML 
 const showHTML = () =>{
 
+    if(!allProducts.length){
+        containerCartProducts.innerHTML = `
+        <p class="cart-empy"El carrito está vacío</p>
+        `
+    }
 //limpiar HTML
 
 rowProduct.innerHTML = '';
