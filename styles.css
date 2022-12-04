@@ -20,12 +20,6 @@ body{
     stroke: #000;
 }
 
-.icon-deseos{
-    width: 40px;
-    height: 40px;
-    stroke: #000;
-}
-
 .icon-cart:hover{
     cursor: pointer;
 }
@@ -77,18 +71,6 @@ header{
     border-radius: 10px;
     
 }
-.container-deseos-products{
-    position: absolute;
-    top: 50px;
-    right: 0;
-
-    background-color: #fff;
-    width: 400px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-    border-radius: 10px;
-    
-}
 
 .cart-product{
     display: flex;
@@ -100,15 +82,6 @@ header{
 
 }
 
-.deseos-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
 
 .info-cart-product{
     display: flex;
@@ -116,17 +89,8 @@ header{
     flex: 0.8;
 }
 
-.info-deseos-product{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
-}
 
 .titulo-producto-carrito{
-    font-size: 20px;
-}
-
-.titulo-producto-deseos{
     font-size: 20px;
 }
 
@@ -136,11 +100,6 @@ header{
     margin-left: 10px;
 }
 
-.precio-producto-deseos{
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
-}
 
 .cantidad-producto-carrito{
     font-weight: 400;
@@ -236,11 +195,6 @@ header{
 }
 
 .cart-empy{
-    padding: 20px;
-    text-align: center;
-}
-
-.deseos-empy{
     padding: 20px;
     text-align: center;
 }
