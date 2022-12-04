@@ -1,14 +1,14 @@
-const btnCart = document.querySelector('.container-cart-icon');
-const containerCartProducts = document.querySelector(
-    '.container-cart-products'
+const btnDeseos = document.querySelector('.container-deseos-icon');
+const containerDeseosProducts = document.querySelector(
+    '.container-deseos-products'
 );
 
 btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart');
+    containerDeseosProducts.classList.toggle('hidden-deseos');
 });
 
 /* ========================= */
-const cartInfo = document.querySelector('.cart-product');
+const deseosInfo = document.querySelector('.deseos-product');
 const rowProduct = document.querySelector('.row-product');
 
 // Lista de todos los contenedores de productos
@@ -21,8 +21,8 @@ const valorTotal = document.querySelector('.total-pagar');
 
 const countProducts = document.querySelector('#contador-productos');
 
-const cartEmpty = document.querySelector('.cart-empty');
-const cartTotal = document.querySelector('.cart-total');
+const deseosEmpty = document.querySelector('.deseos-empty');
+const deseosTotal = document.querySelector('.deseos-total');
 
 productsList.addEventListener('click', e => {
     if (e.target.classList.contains('btn-add-deseos')) {
@@ -74,9 +74,9 @@ rowProduct.addEventListener('click', e => {
 // Funcion para mostrar  HTML
 const showHTML = () => {
     if (!allProducts.length) {
-        cartEmpty.classList.remove('hidden');
+        deseosEmpty.classList.remove('hidden');
         rowProduct.classList.add('hidden');
-        cartTotal.classList.add('hidden');
+        deseosTotal.classList.add('hidden');
     } 
 
     // Limpiar HTML
@@ -87,13 +87,13 @@ const showHTML = () => {
 
     allProducts.forEach(product => {
         const containerProduct = document.createElement('div');
-        containerProduct.classList.add('cart-product');
+        containerProduct.classList.add('deseos-product');
 
         containerProduct.innerHTML = `
-            <div class="info-cart-product">
+            <div class="info-deseos-product">
                 <span class="cantidad-producto-carrito">${product.quantity}</span>
-                <p class="titulo-producto-carrito">${product.title}</p>
-                <span class="precio-producto-carrito">${product.price}</span>
+                <p class="titulo-producto-deseos">${product.title}</p>
+                <span class="precio-producto-deseos">${product.price}</span>
             </div>
             <svg
                 xmlns="http://www.w3.org/2000/svg"

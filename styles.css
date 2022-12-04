@@ -82,11 +82,13 @@ header{
 
 }
 
+
 .info-cart-product{
     display: flex;
     justify-content: space-between;
     flex: 0.8;
 }
+
 
 .titulo-producto-carrito{
     font-size: 20px;
@@ -97,6 +99,7 @@ header{
     font-size: 20px;
     margin-left: 10px;
 }
+
 
 .cantidad-producto-carrito{
     font-weight: 400;
