@@ -1,14 +1,14 @@
-const btnDeseos = document.querySelector('.container-deseos-icon');
-const containerDeseosProducts = document.querySelector(
-    '.container-deseos-products'
+const btnCart = document.querySelector('.container-cart-icon');
+const containerCartProducts = document.querySelector(
+    '.container-cart-products'
 );
 
 btnCart.addEventListener('click', () => {
-    containerDeseosProducts.classList.toggle('hidden-deseos');
+    containerCartProducts.classList.toggle('hidden-cart');
 });
 
 /* ========================= */
-const deseosInfo = document.querySelector('.deseos-product');
+const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
 // Lista de todos los contenedores de productos
@@ -21,11 +21,11 @@ const valorTotal = document.querySelector('.total-pagar');
 
 const countProducts = document.querySelector('#contador-productos');
 
-const deseosEmpty = document.querySelector('.deseos-empty');
-const deseosTotal = document.querySelector('.deseos-total');
+const cartEmpty = document.querySelector('.cart-empty');
+const cartTotal = document.querySelector('.cart-total');
 
 productsList.addEventListener('click', e => {
-    if (e.target.classList.contains('btn-add-deseos')) {
+    if (e.target.classList.contains('btn-add-cart')) {
         const product = e.target.parentElement;
 
         const infoProduct = {
@@ -74,9 +74,9 @@ rowProduct.addEventListener('click', e => {
 // Funcion para mostrar  HTML
 const showHTML = () => {
     if (!allProducts.length) {
-        deseosEmpty.classList.remove('hidden');
+        cartEmpty.classList.remove('hidden');
         rowProduct.classList.add('hidden');
-        deseosTotal.classList.add('hidden');
+        cartTotal.classList.add('hidden');
     } 
 
     // Limpiar HTML
@@ -87,13 +87,13 @@ const showHTML = () => {
 
     allProducts.forEach(product => {
         const containerProduct = document.createElement('div');
-        containerProduct.classList.add('deseos-product');
+        containerProduct.classList.add('cart-product');
 
         containerProduct.innerHTML = `
-            <div class="info-deseos-product">
+            <div class="info-cart-product">
                 <span class="cantidad-producto-carrito">${product.quantity}</span>
-                <p class="titulo-producto-deseos">${product.title}</p>
-                <span class="precio-producto-deseos">${product.price}</span>
+                <p class="titulo-producto-carrito">${product.title}</p>
+                <span class="precio-producto-carrito">${product.price}</span>
             </div>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
